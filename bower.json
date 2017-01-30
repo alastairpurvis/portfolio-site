@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-site-scss",
+  "description": "A clean, minimalist portfolio site with SASS compile built on ultra lightweight Skeleton grid system",
+  "main": "index.html",
+  "authors": [
+    "Alastair Purvis <alastairpurvis@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.alastairpurvis.com",
+  "private": true,
+  "dependencies": {}
+}
