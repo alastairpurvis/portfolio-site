@@ -1,0 +1,59 @@
+/* About background: $secondary-color; */
+#section-about {
+    color: #fff;
+    background: #2E2E2E;
+    padding: 130px 0;
+}
+@media only screen and (max-width: 768px) {
+    #section-about {
+        padding: 60px 0;
+    }
+}
+
+    #section-about h3 span.underline {
+        padding-bottom: 3px;
+        border-bottom: 1px solid #fff;
+    }
+
+    p.intro {
+        color: #fff;
+        font: normal 15px/29px $font-stack-1;
+    }
+
+    #port a {
+        color: #fff;
+        font: normal 11px/21px $font-stack-1;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: block;
+        padding: 8px 0 8px 40px;
+        margin-bottom: 10px;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+        -o-transition: all 0.15s linear;
+        -moz-transition: all 0.15s linear;
+        -khtml-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear;
+        -ms-transition: all 0.15s linear;
+        transition: all 0.15s linear;
+    }
+
+    #port a:hover {
+        opacity: 1;
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        transform: scale(1.03);
+    }
+
+    a.link-linkedin {
+        background: url($icon-linkedin) no-repeat left center;
+    }
+
+    a.link-github {
+        background: url($icon-github) no-repeat left center;
+    }
+
+    a.link-pdf {
+        background: url($icon-pdf) no-repeat left center;
+    }

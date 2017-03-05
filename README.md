@@ -1,6 +1,6 @@
 ## Portfolio Site
 
-My Portfolio site with SASS compile built on ultra lightweight Skeleton grid system, as well as gulp and bower config.
+Portfolio site with SASS compile built on ultra lightweight Skeleton grid system, as well as gulp and bower config.
 
 ## Installation
 

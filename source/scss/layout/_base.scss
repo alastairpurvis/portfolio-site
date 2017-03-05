@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------------------
+	1. Body
+--------------------------------------------------------------------------*/
+
+body {
+	color: $primary-color;
+	background: #fff;
+	font: 14px/22px $font-stack-2;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------
+	2. Typography
+--------------------------------------------------------------------------*/
+
+/* Headings Default */
+h1 { font-size: 17px; line-height: 20px; font-weight: bold; }
+h2 { font-size: 18px; line-height: 27px; }
+h3 { font-size: 15px; line-height: 22px; }
+h4 { font-size: 13px; line-height: 23px; }
+h6 { font-size: 12px; line-height: 14px; }
+
+/* Links */
+a, a:visited { color: #333; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: $third-color; }
+p a, p a:visited { line-height: inherit; }
+
+
+/* Highlighted Text */
+::selection {
+	background: $secondary-color;
+	color:#fff;
+	text-shadow: none;
+}
+
+/* Firefox */
+::-moz-selection {
+	background: $secondary-color;
+	color:#fff;
+	text-shadow: none;
+}
+
+em, .italic { font-style: italic; }
+strong { font-weight: bold; }
+small { font-size: 80%; }
+
+.font-color-primary {
+	color: $secondary-color;
+}
+
+.font-color-gray {
+	color: #bbb;
+}
+
+.font-color-black {
+	color: #111;
+}
+.font-color-darkgray {
+	color: #s6E6E6E;
+}
+
+
+/*--------------------------------------------------------------------------
+	3. Page Sections
+--------------------------------------------------------------------------*/
+
+/* Common Elements */
+img {
+	max-width: 100%;
+}
+
+h3 {
+	font: normal 300 13px/22px $font-stack-1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+h5 {
+	font: normal 11px/21px $font-stack-1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+		/* jQuery UI tooltip for menu items */
+		.ui-tooltip {
+			color: #eee;
+			background: #222;
+			padding: 10px 15px;
+			font: normal 300 12px/22px $font-stack-1;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			position: absolute;
+			z-index: 9999;
+			max-width: 300px;
+		}
+
+		body .ui-tooltip {
+			border: none;
+		}

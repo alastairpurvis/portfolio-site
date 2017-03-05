@@ -1,0 +1,45 @@
+/*---------------------------------------------------
+    Navigation bar
+---------------------------------------------------*/
+/* Navigation */
+#section-nav {
+    width: 100%;
+
+}
+/* Navigation */
+#section-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+}
+
+#section-nav li {
+    float: right;
+}
+
+#section-nav li a {
+    font: normal 15px/22px $font-stack-1;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 34px 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include hover-transition(0.1s);
+}
+
+#section-nav .logo li, #section-nav .logo li a {
+    float: left;
+    font: normal 18px/24px $font-stack-1 !important;
+    letter-spacing: 6px;
+    padding-left: 0;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+#section-nav li a:hover {
+    background-color: #111;
+}

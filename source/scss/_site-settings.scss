@@ -1,0 +1,41 @@
+
+/*--------------------------------------------------------------------------
+	Fonts
+--------------------------------------------------------------------------*/
+
+$font-stack-1:    'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack-2:    "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*--------------------------------------------------------------------------
+	Colors
+--------------------------------------------------------------------------*/
+
+$primary-color: #333;
+/* Aqua */
+$secondary-color: #44bbaa;
+$secondary-color-hover: #3ca898;
+/* Black */
+$third-color: #000;
+
+/*--------------------------------------------------------------------------
+	Images
+--------------------------------------------------------------------------*/
+
+$header-image: 'images/skills.jpg';
+$tech-image: 'images/techbg.jpg';
+
+/* Icons */
+$icon-linkedin: 'images/icon_linkedin.png';
+$icon-github: 'images/icon_git.png';
+$icon-pdf: 'images/icon_pdf.png';
+
+
+/*--------------------------------------------------------------------------
+	Animation
+--------------------------------------------------------------------------*/
+@mixin hover-transition($speed) {
+    -webkit-transition: all $speed ease-in-out;
+    -moz-transition: all $speed ease-in-out;
+    -o-transition: all $speed ease-in-out;
+    transition: all $speed ease-in-out;
+}
