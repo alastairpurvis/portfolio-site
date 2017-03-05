@@ -1,6 +1,6 @@
 ## Portfolio Site
 
-Portfolio site with SASS compile built on ultra lightweight Skeleton grid system, as well as gulp and bower config. Styles are automatically concatenated, minified and inlined into HTML to improve performance. Scripts will also be transpiled by Babel for new ES6 features.
+Portfolio site with SASS compile built on lightweight Skeleton grid system, as well as gulp and bower config. Styles are automatically concatenated, minified and inlined into HTML to improve performance. Scripts will also be transpiled by Babel for new ES6 features.
 
 ## Installation
 

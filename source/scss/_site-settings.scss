@@ -33,6 +33,7 @@ $icon-pdf: 'images/icon_pdf.png';
 /*--------------------------------------------------------------------------
 	Animation
 --------------------------------------------------------------------------*/
+
 @mixin hover-transition($speed) {
     -webkit-transition: all $speed ease-in-out;
     -moz-transition: all $speed ease-in-out;

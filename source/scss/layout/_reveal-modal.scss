@@ -1,5 +1,5 @@
 /*---------------------------------------------------
-    3.4.1 jQuery Reveal Plugin
+    jQuery Reveal Modal Plugin
 ---------------------------------------------------*/
 
 /* CSS for jQuery Reveal Plugin Maintained for Foundation. foundation.zurb.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php */
@@ -73,4 +73,21 @@
         .reveal-modal a.close-reveal-modal:hover {
             color: $secondary-color;
             background: $third-color;
+        }
+
+        /* jQuery UI tooltip for menu items */
+        .ui-tooltip {
+        	color: #eee;
+        	background: #222;
+        	padding: 10px 15px;
+        	font: normal 300 12px/22px $font-stack-1;
+        	text-transform: uppercase;
+        	letter-spacing: 2px;
+        	position: absolute;
+        	z-index: 9999;
+        	max-width: 300px;
+        }
+
+        body .ui-tooltip {
+        	border: none;
         }

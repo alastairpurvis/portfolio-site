@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------
-	1. Body
+	Body
 --------------------------------------------------------------------------*/
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 /*--------------------------------------------------------------------------
-	2. Typography
+	Typography
 --------------------------------------------------------------------------*/
 
 /* Headings Default */
@@ -64,7 +64,7 @@ small { font-size: 80%; }
 
 
 /*--------------------------------------------------------------------------
-	3. Page Sections
+	Page Sections
 --------------------------------------------------------------------------*/
 
 /* Common Elements */
@@ -85,20 +85,3 @@ h5 {
 	text-transform: uppercase;
 	margin-bottom: 3px;
 }
-
-		/* jQuery UI tooltip for menu items */
-		.ui-tooltip {
-			color: #eee;
-			background: #222;
-			padding: 10px 15px;
-			font: normal 300 12px/22px $font-stack-1;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			position: absolute;
-			z-index: 9999;
-			max-width: 300px;
-		}
-
-		body .ui-tooltip {
-			border: none;
-		}
