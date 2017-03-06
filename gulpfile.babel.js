@@ -9,6 +9,7 @@ import merge from 'merge-stream';
 import imagemin from 'gulp-imagemin';
 import clean from 'gulp-clean';
 import inlinefrom from 'gulp-inline-source-from';
+import htmlrender from 'gulp-htmlrender';
 import htmlmin from 'gulp-htmlmin';
 
 // General files task e.g. HTML, PHP
@@ -29,21 +30,6 @@ gulp.task('move', () => {
   .pipe(gulp.dest('build'));
 });
 
-// HTML minify and inline
-gulp.task('html', () => gulp.src('source/*.html')
-  .pipe(inlinefrom())
-  .pipe(htmlmin({
-      collapseWhitespace: true,
-      removeComments: true,
-      minifyJS: true,
-      minifyCSS: true,
-      html5: true,
-      collapseBooleanAttributes: true,
-      processConditionalComments: true,
-      removeEmptyAttributes: true,
-      removeOptionalTags: true}))
-  .pipe(gulp.dest('build')));
-
 // Styles task
 gulp.task('styles', () => {
   gulp.src('source/scss/*.scss')
@@ -53,6 +39,7 @@ gulp.task('styles', () => {
   .pipe(gulp.dest('build/'))
   .on('end', () => {
       gulp.src('source/*.html')
+        .pipe(htmlrender.render())
         .pipe(inlinefrom())
         .pipe(htmlmin({
             collapseWhitespace: true,
@@ -72,13 +59,13 @@ gulp.task('styles', () => {
 
 // Scripts task
 gulp.task('scripts', () => {
-  gulp.src('source/js/*.js')
+  gulp.src('source/js/**/*.js')
   .pipe(concat('scripts.min.js'))
   .pipe(babel({
             presets: ['es2015']
         }))
   .pipe(uglify())
-  .pipe(gulp.dest('build/'))
+  .pipe(gulp.dest('build/'));
 });
 
 // Images task
