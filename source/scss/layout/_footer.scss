@@ -34,7 +34,7 @@
         padding: 30px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 768px) {
         #section-footer p, #section-footer ul#social  {
             text-align: center;
             width: 100%;
@@ -44,6 +44,25 @@
         }
         #section-footer ul#social li a {
             background: $secondary-color;
+        }
+        /* Adjust footer social media menu */
+        #section-footer ul#social {
+            float: none;
+        }
+
+	    #section-footer p {
+	        margin: 40px 0 39px 0;
+	    }
+
+        #section-footer ul#social li a {
+            border-right: none;
+            margin-right: 1px;
+            padding: 15px;
+            margin-top: 1px;
+        }
+
+        #section-footer ul#social li a img {
+            width: 16px;
         }
     }
 

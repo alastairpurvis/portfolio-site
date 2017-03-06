@@ -75,6 +75,32 @@
             background: $third-color;
         }
 
+        @media only screen and (max-width: 767px) {
+
+            .reveal-modal {
+    			margin-left: -45%;
+    			width: 90%;
+    		}
+
+    			.reveal-modal .box-modal {
+    				padding: 10px 15px 15px 15px;
+    			}
+
+    				.reveal-modal .box-modal h4 {
+    					font: normal 13px/21px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    					margin-bottom: 10px;
+    				}
+
+    				.reveal-modal .box-modal p {
+    					font: normal 11px/21px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    				}
+
+    			.reveal-modal a.link-details,
+    			.reveal-modal a.close-reveal-modal {
+    				padding: 10px 15px;
+    			}
+        }
+
         /* jQuery UI tooltip for menu items */
         .ui-tooltip {
         	color: #eee;

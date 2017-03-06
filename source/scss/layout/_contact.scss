@@ -118,3 +118,17 @@
     :-moz-placeholder {
         color: $secondary-color;
     }
+
+    @media only screen and (max-width: 767px) {
+
+
+		#section-contact input,
+		#section-contact textarea,
+		#section-contact select {
+			width: 260px;
+		}
+
+		#section-contact label.placeholder {
+			display: none;
+		}
+    }
