@@ -10,7 +10,7 @@
 #section-hero  {
     background: #222 url($header-image) no-repeat top right;
     background-size: cover;
-    height: 630px;
+    height: 650px;
     -ms-behavior: url(includes/backgroundsize.min.htc);
     -webkit-transform: translateZ(0);
     will-change: transform;
@@ -18,38 +18,39 @@
 
 #section-hero #foreground  {
     vertical-align: bottom;
-    height: 630px;
+    height: 650px;
     position: absolute;
-    width: 90%;
+    width: 98%;
 }
 
 #section-hero #foreground img  {
     position: absolute;
     bottom: 0;
-    margin-bottom: 0px;
-    -webkit-box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.63);
-    -moz-box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.63);
-    box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.63);
+    margin-left: -20px;
+    /*-webkit-box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);
+    -moz-box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);
+    box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);*/
 }
 
 #section-hero #hero {
     color: #333;
     font-size: 16px;
     line-height: 26px;
-    margin-top: 47%;
+    margin-top: 48%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #section-hero #foreground  {
+        width: 140%;
+    }
+    #section-hero #hero {
+        margin-top: 65%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     #section-hero #foreground, #section-hero #foreground img  {
         display: none;
-    }
-    #section-nav li {
-        display: none;
-    }
-    #section-nav .logo li, .logo li a {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
     }
     #section-hero #hero {
         margin-top: 40%;
@@ -111,8 +112,8 @@
         #hero .button{
             background-color: $secondary-color !important;
             border-radius: 3px;
-            padding: 10px 45px 10px 45px;
-            box-shadow: -1px 12px 35px -5px rgba(0,0,0,0.13);
+            padding: 8px 43px 8px 43px;
+            box-shadow: -1px 12px 35px -5px rgba(0,0,0,0.15);
          }
         #hero a:hover{
             margin-top: 2px;

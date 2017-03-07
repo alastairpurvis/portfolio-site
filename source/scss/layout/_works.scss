@@ -6,7 +6,7 @@
     color: #222;
     background: #dbdbdb;
     font: normal 16px/26px $font-stack-1;
-    padding: 110px 0;
+    padding: 115px 0 100px;
 }
 
     #section-works .item {
@@ -93,7 +93,12 @@
 
     				#section-works .img-wrap {
     					margin-bottom: 15px;
-    					margin-left: -5%;
+                        text-align:center;
+                        margin-left: -20px;
+    				}
+                    #section-works img {
+                        text-align:center;
+    				    width: 88%;
     				}
 
     			#section-works .item .work-info {

@@ -1,12 +1,19 @@
 $(document).ready(() => {
 
+	// Preloader fade in
+	$(window).load(function () {
+		 $('#preloader').fadeOut('slow', function () {
+			 $(this).remove();
+		 });
+	 });
+
 	// Parallax scrolling
 	const isWebKit = 'WebkitAppearance' in document.documentElement.style;
 
 	if(isWebKit && ($(window).width() >= 1020)) {
 		((() => {
             const parallax = document.querySelectorAll(".parallax");
-            const speed = 0.6;
+            const speed = 0.4;
 
             window.onscroll = () => {
               [].slice.call(parallax).forEach((el, i) => {
@@ -40,8 +47,6 @@ $(document).ready(() => {
 	$('#section-works img').wrap('<div class="img-wrap" />');
 
 });
-
-
 
 // Smooth onpage scroll for links
 $(() => {

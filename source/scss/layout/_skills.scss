@@ -9,37 +9,16 @@
   background-position: top right;
   -ms-behavior: url(includes/backgroundsize.min.htc);
   color: #fff;
-  padding: 150px 0 60px;
+  padding: 180px 0 130px;
   -webkit-transform: translateZ(0);
   will-change: transform;
-}
-@media only screen and (max-width: 1420px){
-    .skills {
-        background-size: 125%;
-    }
-}
-@media only screen and (max-width: 1120px){
-    .skills {
-        background-size: 155%;
-    }
-}
-@media only screen and (max-width: 960px){
-    .skills {
-        background-size: 184%;
-    }
-}
-@media only screen and (max-width: 768px){
-    .skills {
-        background-image: none;
-        padding: 80px 0 10px;
-    }
 }
 .skill {
     margin-top: -50px;
   padding: 50px 0 50px;
 }
 .skills-image {
-  margin-bottom: 1.5rem;
+  margin-bottom: 30px;
   color: #11DFC7;
 }
 .skills-image img {
@@ -48,10 +27,21 @@
 }
 .skills-heading {
   font-size: 14px;
-  margin-bottom: .3rem;
+  margin-bottom: 15px;
 }
 .skills-description {
   opacity: .8;
-  font-weight: 300;
-  font-size: 10px;
+  font-size: 12px;
+}
+@media only screen and (max-width: 768px){
+    .skills {
+        background-image: none;
+        padding: 80px 0 10px;
+    }
+    .skill {
+      padding: 30px 0 30px;
+    }
+    .skills-description {
+      font-size: 14px;
+    }
 }

@@ -85,6 +85,7 @@ gulp.task('watch', () => {
     gulp.watch('source/**/*.jpg', ['images']);
     gulp.watch('source/**/*.png', ['images']);
     gulp.watch('source/*.html', ['styles']);
+    gulp.watch('source/views/*.html', ['styles']);
 });
 
 gulp.task('default', ['move', 'styles', 'scripts', 'images', 'watch']);
