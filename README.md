@@ -5,7 +5,7 @@ Portfolio site with SASS compile built on lightweight Skeleton grid system, as w
 ## Installation
 
 Needs Node & NPM installed.
-Launch a terminal and go to the project directory.
+Launch a terminal and cd to the project directory.
 ```
 npm install
 ```

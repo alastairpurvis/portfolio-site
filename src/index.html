@@ -1,0 +1,57 @@
+<!--
+	Single page portfolio site
+	Author: Alastair Purvis
+	Views for this page will be combined and minified.
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="en"><!--<![endif]-->
+<head>
+	<%include src="views/base.html"%>
+</head>
+
+<body style="zoom: 1;">
+
+	<!-- Fade in preload wrapper (we'll ignore if JS disabled) -->
+	<script>document.write('<div id="preloader"></div>');</script>
+
+	<!-- Header / Hero image -->
+	<%include src="views/header.html"%>
+
+	<!-- About -->
+	<%include src="views/intro.html"%>
+
+	<!-- Recent Commercial Samples -->
+	<%include src="views/works.html"%>
+
+	<!-- Skills -->
+	<%include src="views/skills.html"%>
+
+	<!-- Personal Project Samples -->
+	<%include src="views/projects.html"%>
+
+	<!-- Modal Popup -->
+	<%include src="views/modals.html"%>
+
+	<!-- Contact -->
+	<%include src="views/contact.html"%>
+
+	<!-- Footer and social links-->
+	<%include src="views/footer.html"%>
+
+	<!-- Hosted CDN JavaScript with IE8 fallback
+	================================================== -->
+	<!--[if lt IE 9]>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+	<!--<![endif]-->
+
+	<!-- Custom JavaScript
+	================================================== -->
+	<script src="bundle.min.js" type="text/javascript" defer></script>
+	<script>mixpanel.track('Page Viewed', {'page name' : document.title, 'url' : window.location.pathname});</script>
+
+</body>
+</html>

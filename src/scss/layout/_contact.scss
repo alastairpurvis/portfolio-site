@@ -1,0 +1,137 @@
+/*---------------------------------------------------
+    Contact form area
+---------------------------------------------------*/
+
+#section-contact {
+    color: #fff;
+    padding: 0px 0;
+    background: #161616;
+    padding: 80px 0;
+}
+
+    #section-contact h3 {
+        font-weight: bold;
+        color: #E6E6E6;
+        margin-bottom: 25px;
+    }
+
+        #section-contact h3 span.underline {
+            padding-bottom: 3px;
+            border-bottom: 1px solid #333;
+        }
+
+    #section-contact p.desc {
+        color: #777;
+        margin-bottom: 40px;
+    }
+
+    /* Register Form */
+    #section-contact form {
+        margin-bottom: 40px;
+    }
+
+    #section-contact form p,
+    #section-contact label,
+    #section-contact legend {
+        font: normal 13px/23px $font-stack-1;
+    }
+
+    #section-contact label {
+        display: inline-block;
+        float: left;
+        width: 155px;
+        margin: 6px 0;
+    }
+
+    #section-contact input,
+    #section-contact textarea,
+    #section-contact select {
+        width: 280px;
+        padding: 14px 20px;
+        color: #eee;
+        background: #333;
+        margin: 0 0 35px 0;
+        border: 0;
+        outline: none;
+        box-shadow: -1px 12px 5px -11px rgba(0,0,0,0.70);
+    }
+
+    #section-contact input:focus,
+    #section-contact textarea:focus,
+    #section-contact select:focus {
+        color: #fff;
+        background-color: $secondary-color;
+    }
+
+    #section-contact button.submit {
+        font: bold 20px/30px $font-stack-1;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        display: block;
+        cursor: pointer;
+        color:#fff;
+        background:#2E2E2E;
+        padding: 20px 28px;
+        border: none;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -khtml-border-radius: 3px;
+        border-radius: 3px;
+        @include hover-transition(0.2s);
+        box-shadow: -1px 12px 5px -11px rgba(0,0,0,0.70);
+    }
+
+    #section-contact button.submit:hover {
+        color: $secondary-color;
+        background: #fff;
+    }
+
+    #section-contact span.required {
+        color: $secondary-color;
+        font-size: 13px;
+    } /* Select the color of the * if the field is required. */
+
+
+    #contact-warning,
+    #contact-success {
+        font: normal 12px/23px $font-stack-1;
+    }
+
+    #contact-warning {
+        display: none;
+        color: #fff;
+        background: #dd3333;
+        padding: 20px 25px;
+        margin-bottom: 30px;
+    }
+
+    #contact-success {
+        display: none;
+        color: #77aa44;
+        background: #111;
+        padding: 20px 25px;
+        margin-bottom: 30px;
+    }
+
+    /* HTML5 Placeholder */
+    ::-webkit-input-placeholder {
+       color: $secondary-color;
+    }
+
+    :-moz-placeholder {
+        color: $secondary-color;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+
+		#section-contact input,
+		#section-contact textarea,
+		#section-contact select {
+			width: 260px;
+		}
+
+		#section-contact label.placeholder {
+			display: none;
+		}
+    }

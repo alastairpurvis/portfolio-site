@@ -14,31 +14,31 @@ import htmlmin from 'gulp-htmlmin';
 
 // General files task e.g. HTML, PHP
 const filesToMove = [
-    './source/includes/*.*',
-    './source/downloads/*.*',
-    './source/samples/*.*',
-    './source/fonts/*.*'
+    './src/includes/*.*',
+    './src/downloads/*.*',
+    './src/samples/*.*',
+    './src/fonts/*.*'
 ];
 
-gulp.task('clean', () => gulp.src(['build/*'], {read:false})
+gulp.task('clean', () => gulp.src(['dist/*'], {read:false})
 .pipe(clean()));
 
 gulp.task('move', () => {
   // the base option sets the relative root for the set of files,
   // preserving the folder structure
-  gulp.src(filesToMove, { base: './source/' })
-  .pipe(gulp.dest('build'));
+  gulp.src(filesToMove, { base: './src/' })
+  .pipe(gulp.dest('dist'));
 });
 
 // Styles task
 gulp.task('styles', () => {
-  gulp.src('source/scss/*.scss')
+  gulp.src('src/scss/*.scss')
   .pipe(sass())
   .pipe(concat('stylesheet.min.css'))
   .pipe(minify())
-  .pipe(gulp.dest('build/'))
+  .pipe(gulp.dest('dist/'))
   .on('end', () => {
-      gulp.src('source/*.html')
+      gulp.src('src/*.html')
         .pipe(htmlrender.render())
         .pipe(inlinefrom())
         .pipe(htmlmin({
@@ -53,39 +53,39 @@ gulp.task('styles', () => {
             removeOptionalTags: true,
             removeAttributeQuotes: true,
             decodeEntities: true}))
-        .pipe(gulp.dest('build'));
+        .pipe(gulp.dest('dist'));
   });
 });
 
 // Scripts task
 gulp.task('scripts', () => {
-  gulp.src('source/js/**/*.js')
-  .pipe(concat('scripts.min.js'))
+  gulp.src('src/js/**/*.js')
+  .pipe(concat('bundle.min.js'))
   .pipe(babel({
             presets: ['es2015']
         }))
   .pipe(uglify())
-  .pipe(gulp.dest('build/'));
+  .pipe(gulp.dest('dist/'));
 });
 
 // Images task
 gulp.task('images', () =>
-    gulp.src('source/images/*')
+    gulp.src('src/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('build/images'))
+        .pipe(gulp.dest('dist/images'))
 );
 
 // Watch task
 gulp.task('watch', () => {
-    gulp.watch('source/**/*.scss', ['styles']);
-    gulp.watch('source/**/*.js', ['scripts']);
-    gulp.watch('source/*.htm', ['move']);
-    gulp.watch('source/*.php', ['move']);
-    gulp.watch('source/**/*.php', ['move']);
-    gulp.watch('source/**/*.jpg', ['images']);
-    gulp.watch('source/**/*.png', ['images']);
-    gulp.watch('source/*.html', ['styles']);
-    gulp.watch('source/views/*.html', ['styles']);
+    gulp.watch('src/**/*.scss', ['styles']);
+    gulp.watch('src/**/*.js', ['scripts']);
+    gulp.watch('src/*.htm', ['move']);
+    gulp.watch('src/*.php', ['move']);
+    gulp.watch('src/**/*.php', ['move']);
+    gulp.watch('src/**/*.jpg', ['images']);
+    gulp.watch('src/**/*.png', ['images']);
+    gulp.watch('src/*.html', ['styles']);
+    gulp.watch('src/views/*.html', ['styles']);
 });
 
 gulp.task('default', ['move', 'styles', 'scripts', 'images', 'watch']);

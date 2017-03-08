@@ -1,0 +1,142 @@
+/*---------------------------------------------------
+    Header / hero image
+---------------------------------------------------*/
+
+#section-intro {
+
+    overflow-x: hidden;
+}
+
+#section-hero  {
+    background: #222 url($header-image) no-repeat top right;
+    background-size: cover;
+    height: 650px;
+    -ms-behavior: url(includes/backgroundsize.min.htc);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+}
+
+#section-hero #foreground  {
+    vertical-align: bottom;
+    height: 650px;
+    position: absolute;
+    width: 98%;
+}
+
+#section-hero #foreground img  {
+    position: absolute;
+    bottom: 0;
+    margin-left: -20px;
+    /*-webkit-box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);
+    -moz-box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);
+    box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);*/
+}
+
+#section-hero #hero {
+    color: #333;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 48%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #section-hero #foreground  {
+        width: 140%;
+    }
+    #section-hero #hero {
+        margin-top: 65%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #section-hero #foreground, #section-hero #foreground img  {
+        display: none;
+    }
+    #section-hero #hero {
+        margin-top: 40%;
+    }
+
+    #section-hero {
+        height: 240px;
+        background-attachment: local !important;
+        background-size: constrain;
+    }
+
+    #section-hero #box-name {
+        margin-top: 80px;
+    }
+
+    #section-hero #box-name h2 {
+        color: #fff;
+        font: normal bold 25px/35px $font-stack-1;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    p.intro {
+        font: normal 13px/24px $font-stack-1;
+        margin-bottom: 30px;
+    }
+}
+
+    #section-hero #hero h2 {
+        color: #fff;
+        font: normal 68px/70px $font-stack-1;
+        margin-bottom: 22px;
+        font-weight: 500;
+    }
+    @media only screen and (max-width: 767px) {
+        #section-hero #hero h2 {
+            font: normal 32px/34px $font-stack-1;
+            text-align: center;
+        }
+        #section-hero #hero p {
+            display: none;
+        }
+    }
+
+    #section-hero #hero h2 .highlight {
+        color: lightgray;
+        font-weight: 100;
+    }
+
+        #hero a {
+            color: #BDBDBD;
+            font: normal 400 18px/18px $font-stack-1;
+            letter-spacing: 2px;
+            background-color: none; color:#FFF;line-height: 200%;
+            @include hover-transition(0.2s);
+            position: absolute;
+        }
+
+        #hero .button{
+            background-color: $secondary-color !important;
+            border-radius: 3px;
+            padding: 8px 43px 8px 43px;
+            box-shadow: -1px 8px 5px -9px rgba(0,0,0,0.48);
+         }
+        #hero a:hover{
+            margin-top: 2px;
+            background-color: $secondary-color-hover !important;
+            box-shadow: -1px 12px 25px -12px rgba(0,0,0,0.4);
+        }
+
+        #section-hero .sub-heading a {
+            font-size: 10px;
+            margin-top: 75px;
+        }
+        #section-hero .sub-heading a:hover {
+            background-color: transparent !important;
+            color: lightgray;
+            box-shadow: none;
+        }
+
+
+
+        #section-hero #box-name a {
+            color: #fff;
+        }
+
+            #section-hero #box-name a:hover {
+                color: $secondary-color;
+            }
