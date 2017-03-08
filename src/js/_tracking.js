@@ -1,6 +1,3 @@
-// Mixpanel tracking scripts
-// Used to track event clicks on my site.
-
 function trackMixpanel() {
 
     var referrer = {
