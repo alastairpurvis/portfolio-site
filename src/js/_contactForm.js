@@ -1,10 +1,10 @@
 // checks that an input string looks like a valid email address.
-const isEmail_re       = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
-function isEmail (s) {
-   return String(s).search (isEmail_re) != -1;
-}
 
-$(document).ready(() => {
+export function contactForm() {
+    const isEmail_re       = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+    function isEmail (s) {
+       return String(s).search (isEmail_re) != -1;
+    }
 
 	// Handle Contact Form Submission
 	$('form#contactForm button.submit').click(() => {
@@ -58,4 +58,4 @@ $(document).ready(() => {
 		return false;
 
 	});
-});
+}

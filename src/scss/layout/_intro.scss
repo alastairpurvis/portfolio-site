@@ -3,9 +3,9 @@
 ---------------------------------------------------*/
 
 #section-about {
-    color: #fff;
-    background: #2E2E2E;
-    padding: 120px 0;
+    color: #000;
+    background: #fff;
+    padding: 160px 0;
     /*-webkit-box-shadow: inset -6px 101px 109px -118px rgba(0,0,0,0.4);
     -moz-box-shadow: inset -6px 101px 109px -118px rgba(0,0,0,0.4);
     box-shadow: inset -6px 101px 109px -118px rgba(0,0,0,0.4);*/
@@ -18,24 +18,24 @@
 
     #section-about h3 span.underline {
         padding-bottom: 3px;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #000;
     }
 
     p.intro {
-        color: #fff;
+        color: grey;
         font: normal 15px/29px $font-stack-1;
     }
 
     #port a {
-        color: #fff;
+        color: #000;
         font: normal 11px/21px $font-stack-1;
         letter-spacing: 1px;
         text-transform: uppercase;
         display: block;
         padding: 8px 0 8px 40px;
         margin-bottom: 10px;
-        opacity: 0.6;
-        filter: alpha(opacity=60);
+        opacity: 1;
+        filter: alpha(opacity=100);
         -o-transition: all 0.15s linear;
         -moz-transition: all 0.15s linear;
         -khtml-transition: all 0.15s linear;
@@ -45,7 +45,8 @@
     }
 
     #port a:hover {
-        opacity: 1;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
         -webkit-transform: scale(1.03);
         -ms-transform: scale(1.03);
         -moz-transform: scale(1.03);

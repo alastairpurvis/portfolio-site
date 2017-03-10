@@ -1,8 +1,10 @@
 import gulp from 'gulp';
 import babel from 'gulp-babel';
+import webpack from 'webpack-stream';
 import uglify from 'gulp-uglify';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
+import sourcemaps from 'gulp-sourcemaps';
 import concat from 'gulp-concat';
 import minify from 'gulp-minify-css';
 import merge from 'merge-stream';
@@ -59,18 +61,29 @@ gulp.task('styles', () => {
 
 // Scripts task
 gulp.task('scripts', () => {
-  gulp.src('src/js/**/*.js')
-  .pipe(concat('bundle.min.js'))
-  .pipe(babel({
-            presets: ['es2015']
-        }))
+  gulp.src('src/js/app.js')
+  .pipe(webpack({
+          module: {
+            loaders: [
+              {
+                loader: 'babel',
+                query: {
+                  presets: ['es2015']
+                }
+              }
+            ]
+        },
+          output: {
+            filename: 'app.min.js',
+          }
+    }))
   .pipe(uglify())
-  .pipe(gulp.dest('dist/'));
+  .pipe(gulp.dest('dist/'))
 });
 
 // Images task
 gulp.task('images', () =>
-    gulp.src('src/images/*')
+    gulp.src('src/images/*.{jpg,jpeg,png,gif,svg}')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
 );

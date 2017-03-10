@@ -26,7 +26,7 @@
 #section-hero #foreground img  {
     position: absolute;
     bottom: 0;
-    margin-left: -20px;
+    margin-left: -40px;
     /*-webkit-box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);
     -moz-box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);
     box-shadow: -15px 10px 40px -24px rgba(0,0,0,0.53);*/
@@ -45,6 +45,9 @@
     }
     #section-hero #hero {
         margin-top: 65%;
+    }
+    #section-hero #foreground img  {
+        margin-left: -25px;
     }
 }
 

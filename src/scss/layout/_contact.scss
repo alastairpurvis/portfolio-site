@@ -5,7 +5,7 @@
 #section-contact {
     color: #fff;
     padding: 0px 0;
-    background: #161616;
+    background: #1e1e1e;
     padding: 80px 0;
 }
 
@@ -17,7 +17,7 @@
 
         #section-contact h3 span.underline {
             padding-bottom: 3px;
-            border-bottom: 1px solid #333;
+            /*border-bottom: 1px solid #333;*/
         }
 
     #section-contact p.desc {
@@ -49,11 +49,11 @@
         width: 280px;
         padding: 14px 20px;
         color: #eee;
-        background: #333;
+        background: #383838;
         margin: 0 0 35px 0;
         border: 0;
         outline: none;
-        box-shadow: -1px 12px 5px -11px rgba(0,0,0,0.70);
+        box-shadow: -1px 12px 3px -11px rgba(0,0,0,0.40);
     }
 
     #section-contact input:focus,
@@ -78,11 +78,11 @@
         -khtml-border-radius: 3px;
         border-radius: 3px;
         @include hover-transition(0.2s);
-        box-shadow: -1px 12px 5px -11px rgba(0,0,0,0.70);
+        box-shadow: -1px 12px 3px -11px rgba(0,0,0,0.40);
     }
 
     #section-contact button.submit:hover {
-        color: $secondary-color;
+        color: #333;
         background: #fff;
     }
 

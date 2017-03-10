@@ -1,14 +1,13 @@
 /* Variables */
 @import "site-settings";
 
-/* Vendor */
-@import "vendor/reset";
-@import "vendor/web-fonts";
-
 /* Modules */
+@import "modules/reset";
+@import "modules/web-fonts";
 @import "modules/animation";
 @import "modules/grid";
 @import "modules/lightbox";
+@import "modules/preloader";
 
 /* Layouts */
 @import "layout/base";

@@ -30,7 +30,7 @@
 
 	/* support for nested featherlights. Does not work in IE8 (use JS to fix) */
 	.featherlight:last-of-type {
-		background: rgba(0, 0, 0, 0.4);
+		background: rgba(0, 0, 0, 0.85);
 	}
 	.featherlight:before {
 		/* position: trick to center content vertically */
@@ -55,7 +55,7 @@
 
 		/* reset white-space wrapping */
 		white-space: normal;
-        box-shadow: -1px 10px 25px -5px rgba(0,0,0,0.38);
+        box-shadow: -1px 6px 10px -5px rgba(0,0,0,0.54);
 	}
 
 	/* contains the content */

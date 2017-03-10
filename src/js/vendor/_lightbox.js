@@ -5,7 +5,8 @@
  * Copyright 2017, Noël Raoul Bossart (http://www.noelboss.com)
  * MIT Licensed.
 **/
-(function($) {
+
+export function lightbox ($) {
 	"use strict";
 
 	if('undefined' === typeof $) {
@@ -612,4 +613,4 @@
 
 	/* bind featherlight on ready if config autoBind is set */
 	$(document).ready(function(){ Featherlight._onReady(); });
-}(jQuery));
+};
