@@ -1,9 +1,11 @@
+import $ from 'jquery';
+
 // creates a parallax effect on all elements with "parallax" class
 
 export function parallax (speed) {
     const isWebKit = 'WebkitAppearance' in document.documentElement.style;
     const isMobileDevice = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
-    const isWidth = $(window).width() >= 1020;
+    const isWidth = $(window).width() >= 1020 && $(window).width() < 1921;
 
     if(isWebKit && isWidth && !isMobileDevice) {
         ((() => {

@@ -1,6 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-
 @charset "UTF-8";
+
+/* opensans */
+
+$OpenSansPath: "./fonts/opensans" !default;
+$OpenSansVersion: "1.1.0" !default; 
+
+@mixin fontdef($OpenSansPath, $OpenSansVersion, $FontType:"Regular") {
+  src:  url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.eot');
+  src:  url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.eot?#iefix') format('embedded-opentype'),
+        url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.woff2') format('woff2'),
+        url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.woff') format('woff'),
+        url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.ttf') format('truetype'),
+        url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, $OpenSansVersion, "Light");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, $OpenSansVersion, "Regular");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, $OpenSansVersion, "Regular");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, $OpenSansVersion, "Bold");
+  font-weight: bold;
+  font-style: normal;
+}
 
 /* socicon */
 @font-face {

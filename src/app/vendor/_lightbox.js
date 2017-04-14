@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 /**
  * Featherlight - ultra slim lightbox
  * Version 1.7.1 - http://noelboss.github.io/featherlight/

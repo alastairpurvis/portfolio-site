@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 // checks that an input string looks like a valid email address.
 
 export function contactForm() {

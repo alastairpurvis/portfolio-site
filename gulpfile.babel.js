@@ -19,7 +19,8 @@ const filesToMove = [
     './src/includes/*.*',
     './src/downloads/*.*',
     './src/samples/*.*',
-    './src/fonts/*.*'
+    './src/fonts/*.*',
+    './src/fonts/**/*'
 ];
 
 gulp.task('clean', () => gulp.src(['dist/*'], {read:false})
@@ -61,7 +62,7 @@ gulp.task('styles', () => {
 
 // Scripts task
 gulp.task('scripts', () => {
-  gulp.src('src/js/app.js')
+  gulp.src('src/app/app.js')
   .pipe(webpack({
           module: {
             loaders: [

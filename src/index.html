@@ -13,7 +13,9 @@
 <body style="zoom: 1;">
 
 	<!-- Fade in preload wrapper (we'll ignore if JS disabled) -->
-	<script>document.write('<div id="preloader"><div class="spinny"></div></div>');</script>
+	<!--[if gt IE 8]><!-->
+		<script>document.write('<div id="preloader"><div class="spinny"></div></div>');</script>
+	<!--<![endif]-->
 
 	<!-- Header / Hero image -->
 	<%include src="views/header.html"%>
@@ -44,13 +46,12 @@
 	<!--[if lt IE 10]>
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<![endif]-->
-	<!--[if gte IE 10]><!-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
-	<!--<![endif]-->
 
 	<!-- Custom JavaScript
 	================================================== -->
-	<script src="app.min.js" type="text/javascript" defer></script>
+	<!--[if gt IE 8]><!-->
+		<script src="app.min.js" type="text/javascript" defer></script>
+	<!--<![endif]-->
 
 	<!-- Google Analytics
 	================================================== -->

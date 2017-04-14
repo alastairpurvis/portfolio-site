@@ -1,5 +1,6 @@
 import { smoothScroll } from './_scrolling.js';
 import { parallax } from './_parallax.js';
+import $ from 'jquery';
 import { tracking } from './_tracking.js';
 import { contactForm } from './_contactForm.js';
 import { lightbox } from './vendor/_lightbox.js';

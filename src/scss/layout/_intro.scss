@@ -54,13 +54,16 @@
     }
 
     a.link-linkedin {
-        background: url($icon-linkedin) no-repeat left center;
+        background: url($icon-linkedin) no-repeat 2% center;
+        background-size: 24px;
     }
 
     a.link-github {
-        background: url($icon-github) no-repeat left center;
+        background: url($icon-github) no-repeat 2% center;
+        background-size: 24px;
     }
 
     a.link-pdf {
-        background: url($icon-pdf) no-repeat left center;
+        background: url($icon-pdf) no-repeat 1% center;
+        background-size: 26px;
     }

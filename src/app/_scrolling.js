@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export function smoothScroll (element) {
 
 	$(element).bind('click', function (event) {
