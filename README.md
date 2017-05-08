@@ -7,7 +7,7 @@ Portfolio site with SASS compile built on lightweight Skeleton grid system, as w
 Needs Node & NPM installed.
 Launch a terminal and cd to the project directory.
 ```
-npm install
+yarn install
 ```
 ```
 bower install
